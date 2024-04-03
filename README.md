@@ -1,3 +1,3 @@
-# VisPGL
+# Rei
 
-VisPGL is a structured **Vis**ualization **P**rototytpe **G**eneration **L**anguage.
+Rei is a structured visualization prototytpe generation language.
