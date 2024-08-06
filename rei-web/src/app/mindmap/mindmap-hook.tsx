@@ -60,7 +60,7 @@ function renderToolbar(mm: Markmap, wrapper: HTMLElement) {
   }
 }
 
-export default function MarkmapHook() {
+export default function MindmapHook() {
   const [value, setValue] = useState(initValue);
   // Ref for SVG element
   const refSvg = useRef<SVGSVGElement>(null);
@@ -87,21 +87,19 @@ export default function MarkmapHook() {
   };
 
   return (
-    <React.Fragment>
-      <div className="flex-1">
-        <textarea
-          className="w-full h-full border border-gray-400"
-          value={value}
-          onChange={handleChange}
-          style={{ width: "100%", height: "500px" }}
-        />
-      </div>
-      <svg
-        className="flex-1"
-        ref={refSvg}
-        style={{ width: "100%", height: "500px" }}
+    <div style={{ display: "flex", height: "100vh" }}>
+      <textarea
+        // className="w-full h-full border border-gray-400"
+        value={value}
+        onChange={handleChange}
+        style={{ width: "50%", padding: "20px" }}
       />
-      <div className="absolute bottom-1 right-1" ref={refToolbar}></div>
-    </React.Fragment>
+      <svg
+        // className="flex-1"
+        ref={refSvg}
+        style={{ width: "50%", padding: "20px", overflowY: "scroll" }}
+      />
+      {/* <div className="absolute bottom-1 right-1" ref={refToolbar}></div> */}
+    </div>
   );
 }

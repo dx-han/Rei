@@ -9,26 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "d3": "^7.9.0",
     "fs": "^0.0.2",
+    "jsonc-parser": "^3.2.1",
     "markmap-common": "^0.15.0",
     "markmap-lib": "^0.15.2",
     "markmap-toolbar": "^0.15.0",
     "markmap-view": "^0.15.0",
     "mermaid": "^10.9.0",
-    "next": "14.1.4",
+    "next": "14.2.0",
     "nomnoml": "^1.6.2",
     "react": "^18",
     "react-dom": "^18",
     "react-markdown": "^9.0.1",
-    "rei-lib": "file:../rei-lib/pkg"
+    "rei-lib": "file:../rei-lib/pkg",
+    "vega": "^5.28.0",
+    "vega-embed": "^6.25.0",
+    "vega-lite": "^5.18.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "tailwindcss": "^3.4.3",
+    "eslint-config-next": "14.2.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }
